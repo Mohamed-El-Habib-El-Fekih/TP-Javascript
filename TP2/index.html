@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="prog.js" defer></script>
+</head>
+<body>
+    <h1>To-Do List Website 😊</h1>
+    <div><h2>Filtrer Votre recherche :</h2><input type="text" id="input2" onkeyup="affich2()"></div>
+    <div>
+        <h2>Ajouter une tâche :</h2>
+        <input type="text" id="input">
+        <button onclick="recup()">ajouter</button>
+        <ol id="liste"></ol>
+    </div>
+    <div id="counters">
+        <span>Tâches en cours: <span id="pendingcount">0</span></span> |
+        <span>Tâches terminées: <span id="donecount">0</span></span>
+    </div>
+    <button onclick="suppall()">tout supprimer</button>
+</body>
+</html>
