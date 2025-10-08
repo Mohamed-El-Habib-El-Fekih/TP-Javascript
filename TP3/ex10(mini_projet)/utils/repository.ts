@@ -1,5 +1,5 @@
 import { Livre } from '../models/book';
-import { Person } from '../models/person.ts';
+import { Person , Role } from '../models/person.ts';
 export class Repository<T>{
     tab: T[]=[];
     ajouter(x:T):void {
@@ -31,4 +31,5 @@ export class Repository<T>{
         if(this.tab.length>0 && this.tab[0] instanceof Livre)
             this.tab[this.rechercher(id)].available=true;
     }
+
 }
