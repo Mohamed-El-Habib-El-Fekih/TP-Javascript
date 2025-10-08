@@ -1,6 +1,6 @@
 import { Repository } from './utils/repository';
 import { Library } from './services/library';
-import { Person } from './models/person.ts';
+import { Person,Role } from './models/person.ts';
 import { Livre } from './models/book.ts';
 import { ApiService } from './services/Api.ts';
 async function main() {
@@ -11,4 +11,5 @@ async function main() {
   livres.forEach(l => library.ajouter(l));
 
   console.log(library);
+
 }
