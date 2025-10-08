@@ -2,10 +2,11 @@ export class ApiService {
     static async fetchBooks() {
         return new Promise<any[]>((resolve) => {
         setTimeout(() => {resolve([
-            { titre: "1984", auteur: "George Orwell", annee: 1949 },
-            { titre: "Le Petit Prince", auteur: "Antoine de Saint-Exupéry", annee: 1943 },
-            { titre: "Dune", auteur: "Frank Herbert", annee: 1965 },]
+            { id=1 , title: "1984", author: "George Orwell", year: 1949, available: true },
+            { id=2 , title: "Le Petit Prince", author: "Antoine de Saint-Exupéry", year: 1943, available: true },
+            { id=3 , title: "Dune", author: "Frank Herbert", year: 1965, available: true },]
             );},500);
         });
     }
+
 }
